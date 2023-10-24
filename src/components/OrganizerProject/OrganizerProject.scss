@@ -40,10 +40,13 @@
 		cursor: pointer;
 	}
 
-	&__name {
+	&__input-name {
 		display: block;
 		min-width: 540px;
+		max-height: 56px;
 		margin: 0;
+		padding: 0;
+		border: none;
 		color: $--Black;
 		font: {
 			family: $--Font-Primary;
@@ -52,6 +55,9 @@
 			weight: 400;
 		}
 		line-height: 100%; /* 56px */
+		&:focus {
+			outline-width: 0;
+		}
 	}
 
 	&__group {
