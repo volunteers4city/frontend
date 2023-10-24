@@ -1,0 +1,208 @@
+@import '../../style/variables.scss';
+
+.project {
+	max-width: 1920px;
+	margin: 0 auto;
+
+	&__container {
+		display: grid;
+	}
+
+	&__content {
+		display: flex;
+		gap: 20px;
+	}
+
+	&__image-wrapper {
+		max-width: 540px;
+		display: flex;
+		flex-direction: column;
+		row-gap: 60px;
+	}
+
+	&__form-wrapper {
+		width: 100%;
+	}
+
+	&__name-container {
+		margin: 54px 0 76px;
+		display: flex;
+		align-items: center;
+		gap: 12px;
+	}
+
+	&__button {
+		background-color: transparent;
+		background-position: 50%;
+		background-repeat: no-repeat;
+		border: none;
+		box-sizing: border-box;
+		cursor: pointer;
+	}
+
+	&__name {
+		display: block;
+		min-width: 540px;
+		margin: 0;
+		color: $--Black;
+		font: {
+			family: $--Font-Primary;
+			size: 56px;
+			style: normal;
+			weight: 400;
+		}
+		line-height: 100%; /* 56px */
+	}
+
+	&__group {
+		display: grid;
+		gap: 32px 21px;
+		margin: 0 0 32px;
+	}
+
+	&__group-general {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	&__group-place {
+		grid-template-columns: 280px 1fr;
+	}
+
+	&__group-date {
+		grid-template-columns: 1fr 2fr 1fr min-content;
+	}
+
+	&__group-additional {
+		grid-template-columns: repeat(4, min-content);
+	}
+
+	&__group-label {
+		margin: 0 0 20px;
+		color: $--Black;
+		font: {
+			family: $--Font-Primary;
+			size: 23px;
+			style: normal;
+			weight: 500;
+		}
+		line-height: 130%; /* 29.9px */
+	}
+
+	&__label {
+		display: flex;
+		flex-direction: column;
+		min-width: 205px;
+		color: $--Text;
+		font: {
+			family: $--Font-Primary;
+			size: 20px;
+			style: normal;
+			weight: 400;
+		}
+		line-height: 23px; /* 115% */
+	}
+
+	&__textarea {
+		margin: 4px 0 0;
+		padding: 24px 16px;
+		min-height: 112px;
+		resize: none;
+		border-radius: 10px;
+		border: 1px solid $--Text;
+		box-sizing: border-box;
+		color: $--Text;
+		&::placeholder {
+			color: $--Dark-grey;
+			font-family: $--Font-Primary;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 300;
+			line-height: 20px; /* 142.857% */
+		}
+	}
+
+	&__text-input {
+		margin: 4px 0 0;
+		padding: 10px 12px;
+		min-height: 36px;
+		border-radius: 10px;
+		border: 1px solid $--Text;
+		box-sizing: border-box;
+		color: $--Text;
+		&::placeholder {
+			color: $--Dark-grey;
+			font-family: $--Font-Primary;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 300;
+			line-height: 20px; /* 142.857% */
+		}
+	}
+
+	&__error-message {
+		color: $--Error;
+		display: none;
+		&_show {
+			display: block;
+		}
+	}
+
+	&__edit-name-button {
+		min-width: 40px;
+		min-height: 40px;
+		background-image: url(../../images/edit.svg);
+	}
+
+	&__upload-image-button {
+		min-width: 40px;
+		min-height: 40px;
+		background-image: url(../../images/upload.svg);
+	}
+
+	&__upload-image-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 24px;
+	}
+
+	&__upload-image-label {
+		color: $--Text;
+		font: {
+			family: $--Font-Primary;
+			size: 23px;
+			style: normal;
+			weight: 500;
+		}
+		line-height: 130%; /* 29.9px */
+	}
+
+	&__form-buttons {
+		margin: 309px 0 0;
+		display: flex;
+		gap: 41px;
+	}
+
+	&__form-send-button {
+		min-width: 380px;
+		min-height: 48px;
+		border-radius: 5px;
+		border: 1px solid $--Button-primary;
+		background-color: $--White;
+		box-sizing: border-box;
+		cursor: pointer;
+		color: $--Black;
+		font: {
+			family: $--Font-Primary;
+			size: 23px;
+			style: normal;
+			weight: 500;
+		}
+		line-height: 130%; /* 29.9px */
+	}
+
+	&__button-primary {
+		background-color: $--Button-primary;
+		color: $--White;
+	}
+}
