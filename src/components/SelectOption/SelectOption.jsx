@@ -14,14 +14,14 @@ function SelectOption({
 	isMulti,
 	required,
 }) {
-	// const [selectedOption, setSelectedOption] = useState(null);
-
 	const customStyles = {
 		control: (baseStyles) => ({
 			...baseStyles,
 			borderRadius: '10px',
 			borderColor: '#000',
-			borderWidth: '1.613px',
+			borderWidth: '1px',
+			minHeight: '36px',
+			boxShadow: 'none',
 			'&:hover': {
 				borderColor: '#000',
 			},
@@ -36,6 +36,10 @@ function SelectOption({
 		placeholder: (baseStyles) => ({
 			...baseStyles,
 			color: '#959595',
+			fontFamily: 'Fira Sans',
+			fontSize: '14px',
+			fontWeight: '300',
+			lineHeight: '20px',
 		}),
 		menu: (baseStyles) => ({
 			...baseStyles,
