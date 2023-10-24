@@ -2,7 +2,7 @@ import SelectOption from '../SelectOption/SelectOption';
 import './OrganizerProject.scss';
 import projectImage from '../../images/project-image.png';
 
-function Project() {
+function OrganizerProject() {
 	return (
 		<section className="project">
 			<div className="project__name-container">
@@ -157,4 +157,4 @@ function Project() {
 	);
 }
 
-export default Project;
+export default OrganizerProject;
